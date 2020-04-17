@@ -10,9 +10,9 @@ export default App6 = ({ navigation }) => {
 
     useEffect(() => {
         Down = () => {
-        fetch('https://reactnative.dev/movies.json')
+        fetch('https://api.jsonbin.io/b/5e95ce46435f5604bb41399b')
         .then((response) => response.json())
-        .then((json) => setData(json.movies))
+        .then((json) => setData(json.Familia))
         .finally(() => setLoading(false)) 
         }
 
@@ -22,15 +22,15 @@ export default App6 = ({ navigation }) => {
     })
 
 	return(
-		<View style={ styles.principal }>
+		<View style={ styles.principal }>  
             <ScrollView>
                 { isLoading ? 
                     <ActivityIndicator size="large" color="blue" /> :
                     data.map(item => 
                         <View key={ item.id }>
                             <View>
-                                <Text style={ styles.txtBotao }>{ item.title }</Text>
-                                <Text style={ styles.txtBotao }>{ item.releaseYear }</Text>
+                                <Text style={styles.txtConteudo}>{ item.nome }</Text>
+                                <Text style={ styles.txtBotao }>{ item.idade }</Text>
                             </View>
                         </View> 
                     ) 
