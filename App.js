@@ -12,13 +12,18 @@ const Stack = createStackNavigator()
 
 export default () => 
 	<NavigationContainer>
-		<Stack.Navigator>
+		<Stack.Navigator 
+			screenOptions={{
+			headerTintColor: '#FFF',
+			headerStyle: { backgroundColor: '#8A2BE2' }}} >
+
 			<Stack.Screen name="App 1" component={ App1 } />
 			<Stack.Screen name="App 2" component={ App2 } />
 			<Stack.Screen name="App 3" component={ App3 } />
 			<Stack.Screen name="App 4" component={ App4 } />
 			<Stack.Screen name="App 5" component={ App5 } />
 			<Stack.Screen name="App 6" component={ App6 } />
+
 		</Stack.Navigator>
 	</NavigationContainer>
 	
