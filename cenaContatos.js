@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StatusBar, Image, Text } from 'react-native'
+import { View, Image, Text } from 'react-native'
 
 
 const detalheContato = require('./imgs/detalhe_contato.png')
@@ -8,7 +8,7 @@ const detalheContato = require('./imgs/detalhe_contato.png')
 export default CenaContatos = () => {
     return(
         <View style={{ backgroundColor: '#FFF' }}>
-            <StatusBar backgroundColor= '#61BD8C' />
+            
             <View style={{ height: 50, backgroundColor: '#61BD8C' }}>
 
             </View>

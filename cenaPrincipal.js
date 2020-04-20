@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StatusBar, Image, TouchableOpacity, Text, ScrollView } from 'react-native'
+import { View, Image, TouchableOpacity, Text, ScrollView } from 'react-native'
 import styles from './styles'
 
 
@@ -14,7 +14,7 @@ export default CenaPrincipal = ({ navigation }) => {
 
     return(
         <ScrollView style={{ backgroundColor: '#FFF' }}>
-            <StatusBar backgroundColor= '#000' />
+
             <View style={{ height: 50, backgroundColor: '#000' }}>
 
             </View>
@@ -60,3 +60,6 @@ export default CenaPrincipal = ({ navigation }) => {
         </ScrollView>
     )
 }
+
+
+

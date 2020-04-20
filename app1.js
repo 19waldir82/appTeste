@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { View, Text, TouchableOpacity } from 'react-native'
+import { View, Text, TouchableOpacity, StatusBar } from 'react-native'
 import styles from './styles'
 
 
@@ -9,6 +9,7 @@ export default App1 = ({ navigation }) => {
 
 	return(
 		<View style={ styles.principal }>
+            <StatusBar backgroundColor= '#000' />
             <View style={ styles.viewConteudo }>
                 <Text style={ styles.txtConteudo }>{ contador }</Text>
                 <TouchableOpacity
