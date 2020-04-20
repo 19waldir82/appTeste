@@ -23,7 +23,7 @@ export default App6 = ({ navigation }) => {
 
 	return(
 		<View style={ styles.principal }>  
-            <ScrollView>
+            <ScrollView style={{ marginTop: 40 }}>
                 { isLoading ? 
                     <ActivityIndicator size="large" color="blue" /> :
                     data.map(item => 
@@ -37,8 +37,8 @@ export default App6 = ({ navigation }) => {
                 }
 
                 <TouchableOpacity
-                    style={ styles.touch }
-                    onPress={ () => navigation.navigate('App 1') }
+                    style={{ backgroundColor: '#8A2BE2', alignItems: 'center', justifyContent: 'center', marginTop: 80, padding: 30 }}
+                    onPress={ () => navigation.navigate('HOME') }
                     >
             	    <Text style={ styles.txtBotao }>Next</Text>
                 </TouchableOpacity>
