@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, StatusBar, Image, TouchableOpacity, Text } from 'react-native'
+import { View, StatusBar, Image, TouchableOpacity, Text, ScrollView } from 'react-native'
 import styles from './styles'
 
 
@@ -13,7 +13,7 @@ const menuServico = require('./imgs/menu_servico.png')
 export default CenaPrincipal = ({ navigation }) => {
 
     return(
-        <View style={{ backgroundColor: '#FFF' }}>
+        <ScrollView style={{ backgroundColor: '#FFF' }}>
             <StatusBar backgroundColor= '#000' />
             <View style={{ height: 50, backgroundColor: '#000' }}>
 
@@ -57,6 +57,6 @@ export default CenaPrincipal = ({ navigation }) => {
                 onPress={ () => navigation.navigate('App 1') } >
             	<Text style={ styles.txtBotao }>Next</Text>
             </TouchableOpacity>
-        </View>
+        </ScrollView>
     )
 }
