@@ -38,7 +38,7 @@ export default App6 = ({ navigation }) => {
 
                 <TouchableOpacity
                     style={{ backgroundColor: '#8A2BE2', alignItems: 'center', justifyContent: 'center', marginTop: 80, padding: 30 }}
-                    onPress={ () => navigation.navigate('HOME') }
+                    onPress={ () => navigation.navigate('App 7') }
                     >
             	    <Text style={ styles.txtBotao }>Next</Text>
                 </TouchableOpacity>

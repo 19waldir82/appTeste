@@ -13,6 +13,11 @@ import CenaClientes from './cenaClientes'
 import CenaContatos from './cenaContatos'
 import CenaEmpresa from './cenaEmpresa'
 import CenaServicos from './cenaServicos'
+import Principal from './home8'
+import SobreJogo from './sobreJogo'
+import OutrosJogos from './outrosJogos'
+import Resultado from './resultado'
+
 
 
 const Stack = createStackNavigator()
@@ -46,12 +51,16 @@ export default () => {
 				<Stack.Screen name="App 4" component={ App4 } />
 				<Stack.Screen name="App 5" component={ App5 } />
 				<Stack.Screen name="App 6" component={ App6 } />
-				<Stack.Screen name="HOME" component={ CenaPrincipal } />
+				<Stack.Screen name="App 7" component={ CenaPrincipal } />
 				<Stack.Screen name="CLIENTES" component={ CenaClientes } />
 				<Stack.Screen name="CONTATOS" component={ CenaContatos } />
 				<Stack.Screen name="EMPRESA" component={ CenaEmpresa } />
 				<Stack.Screen name="SERVIÇOS" component={ CenaServicos } />
-	
+				<Stack.Screen name="App 8" component={Principal} />
+				<Stack.Screen name="SOBREJOGO" component={SobreJogo} />
+                <Stack.Screen name="OUTROSJOGOS" component={OutrosJogos} />
+                <Stack.Screen name="RESULTADO" component={Resultado} />
+				
 			</Stack.Navigator>
 		</NavigationContainer>
 	)

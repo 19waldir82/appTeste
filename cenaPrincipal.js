@@ -54,7 +54,7 @@ export default CenaPrincipal = ({ navigation }) => {
             </View>
             <TouchableOpacity
                 style={{ backgroundColor: '#8A2BE2', alignItems: 'center', justifyContent: 'center', marginTop: 80, padding: 30 }}
-                onPress={ () => navigation.navigate('App 1') } >
+                onPress={ () => navigation.navigate('App 8') } >
             	<Text style={ styles.txtBotao }>Next</Text>
             </TouchableOpacity>
         </ScrollView>
