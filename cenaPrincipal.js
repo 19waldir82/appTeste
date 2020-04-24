@@ -1,5 +1,5 @@
 import React from 'react'
-import { View, Image, TouchableOpacity, Text, ScrollView } from 'react-native'
+import { View, Image, TouchableOpacity, Text } from 'react-native'
 import styles from './styles'
 
 
@@ -13,23 +13,23 @@ const menuServico = require('./imgs/menu_servico.png')
 export default CenaPrincipal = ({ navigation }) => {
 
     return(
-        <ScrollView style={{ backgroundColor: '#FFF' }}>
+        <View style={{ backgroundColor: '#FFF', flex: 1 }}>
 
-            <View style={{ height: 50, backgroundColor: '#000' }}>
+            <View style={{ flex: 1, backgroundColor: '#000' }}>
 
             </View>
             
-            <View style={{ alignItems: 'center', paddingTop: 100 }}>
+            <View style={{ alignItems: 'center', flex: 4, justifyContent: 'center' }}>
                     <Image source={ logo } />
             </View>
             
-            <View style={{ alignItems: 'center' }}>
+            <View style={{ alignItems: 'center', flex: 6, justifyContent: 'center' }}>
 
-                <View style={{ flexDirection: 'row', paddingBottom: 10, paddingTop: 50 }}>
+                <View style={{ flexDirection: 'row' }}>
 
                     <TouchableOpacity
                         onPress={() => navigation.navigate('CLIENTES')}>
-                        <Image style={{ marginRight: 10 }} source={ menuCliente } />
+                        <Image style={{ marginRight: 10, marginBottom: 10 }} source={ menuCliente } />
                     </TouchableOpacity>
 
                     <TouchableOpacity
@@ -52,12 +52,13 @@ export default CenaPrincipal = ({ navigation }) => {
 
                 
             </View>
+
             <TouchableOpacity
-                style={{ backgroundColor: '#8A2BE2', alignItems: 'center', justifyContent: 'center', marginTop: 80, padding: 30 }}
+                style={{ backgroundColor: '#8A2BE2', alignItems: 'center', justifyContent: 'center', flex: 2 }}
                 onPress={ () => navigation.navigate('App 8') } >
             	<Text style={ styles.txtBotao }>Next</Text>
             </TouchableOpacity>
-        </ScrollView>
+        </View>
     )
 }
 

@@ -1,5 +1,6 @@
 import React from 'react'
-import { View, Image, TouchableOpacity } from 'react-native'
+import { View, Image, TouchableOpacity, Text } from 'react-native'
+import styles from './styles'
 
 
 export default Principal = ({ navigation }) => {    
@@ -19,17 +20,23 @@ export default Principal = ({ navigation }) => {
             
             <View style={{ flex: 1, flexDirection: 'row', justifyContent: 'space-between' }}>
                 <TouchableOpacity
-                    onPress={() => navigation.navigate('SOBREJOGO')} >
+                    onPress={() => navigation.navigate('SOBRE O JOGO')} >
                     <Image source={ require('./imgs/sobre_jogo.png') }/>
                 </TouchableOpacity>
                 
                 <TouchableOpacity
-                    onPress={ () => navigation.navigate('OUTROSJOGOS') }>
+                    onPress={ () => navigation.navigate('OUTROS JOGOS') }>
                     <Image source={ require('./imgs/outros_jogos.png') }/>
                 </TouchableOpacity>
                 
             </View>
             
+            <TouchableOpacity
+                style={{ backgroundColor: '#8A2BE2', alignItems: 'center', justifyContent: 'center', marginTop: 80, padding: 30 }}
+                onPress={ () => navigation.navigate('App 1') }>
+                <Text style={ styles.txtBotao }>Next</Text>
+            </TouchableOpacity>
+
         </View>
     )
 }

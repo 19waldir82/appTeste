@@ -57,8 +57,8 @@ export default () => {
 				<Stack.Screen name="EMPRESA" component={ CenaEmpresa } />
 				<Stack.Screen name="SERVIÇOS" component={ CenaServicos } />
 				<Stack.Screen name="App 8" component={Principal} />
-				<Stack.Screen name="SOBREJOGO" component={SobreJogo} />
-                <Stack.Screen name="OUTROSJOGOS" component={OutrosJogos} />
+				<Stack.Screen name="SOBRE O JOGO" component={SobreJogo} />
+                <Stack.Screen name="OUTROS JOGOS" component={OutrosJogos} />
                 <Stack.Screen name="RESULTADO" component={Resultado} />
 				
 			</Stack.Navigator>
