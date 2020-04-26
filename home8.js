@@ -30,8 +30,14 @@ export default Principal = ({ navigation }) => {
                 </TouchableOpacity>
                 
             </View>
-            
-            <TouchableOpacity
+
+
+
+
+
+
+
+     3       <TouchableOpacity
                 style={{ backgroundColor: '#8A2BE2', alignItems: 'center', justifyContent: 'center', flex: 1 }}
                 onPress={ () => navigation.navigate('App 1') }>
                 <Text style={ styles.txtBotao }>Next</Text>
